@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Proposal 💝</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <!-- Page 1: Proposal -->
+    <div id="page1" class="page active">
+        <div class="container">
+            <div class="proposal-card">
+                <div class="heart-animation">❤️</div>
+                
+                <h1 class="main-title">Will You Be My Valentine?</h1>
+                
+                <div class="message-box">
+                    <p>This Valentine's Day, I want to ask you something special...</p>
+                    <p class="proposal-text">You make my world brighter, my heart lighter, and my life more beautiful. 
+                    Will you spend this Valentine's Day and every day after with me?</p>
+                </div>
+                
+                <div class="flowers-container">
+                    <div class="flower">🌹</div>
+                    <div class="flower">🌺</div>
+                    <div class="flower">🌹</div>
+                </div>
+                
+                <div class="button-container">
+                    <button class="yes-btn" onclick="yesClick()">Yes! 💕</button>
+                    <button class="no-btn" id="noBtn" onmouseover="moveButton()">No</button>
+                </div>
+                
+                <div id="response" class="response"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: First Surprise -->
+    <div id="page2" class="page">
+        <div class="container">
+            <div class="proposal-card surprise-page">
+                <h1 class="page-title">✨ SURPRISE! ✨</h1>
+                <div class="surprise-content">
+                    <div class="confetti-animation"></div>
+                    <p class="sweet-message">From the moment I met you, I knew you were someone special.</p>
+                    <p class="sweet-message">Every smile, every laugh, every moment with you is a treasure I hold dear.</p>
+                    <div class="emoji-group">🌟 💫 ✨</div>
+                    <button class="next-btn" onclick="goToPage(3)">Next ➜</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Memory Page -->
+    <div id="page3" class="page">
+        <div class="container">
+            <div class="proposal-card memory-page">
+                <h1 class="page-title">Our Beautiful Memories 📸</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💑</div>
+                        <p>The day I met you changed everything</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">😂</div>
+                        <p>All those silly moments that made me fall for you</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎵</div>
+                        <p>Your laughter is my favorite song</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💪</div>
+                        <p>You bring out the best in me</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="goToPage(4)">Next ➜</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Promise Page -->
+    <div id="page4" class="page">
+        <div class="container">
+            <div class="proposal-card promise-page">
+                <h1 class="page-title">My Promises to You 💝</h1>
+                <div class="promises">
+                    <div class="promise-item">
+                        <span class="promise-icon">💪</span>
+                        <p>I promise to always be there for you</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">🤗</span>
+                        <p>I promise to make you smile every single day</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">💕</span>
+                        <p>I promise to love you more than anything</p>
+                    </div>
+                    <div class="promise-item">
+                        <span class="promise-icon">🌈</span>
+                        <p>I promise to create beautiful memories together</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="goToPage(5)">Next ➜</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Final Page -->
+    <div id="page5" class="page">
+        <div class="container">
+            <div class="proposal-card final-page">
+                <h1 class="page-title">Forever With You 💕</h1>
+                <div class="final-message">
+                    <p class="large-text">I love you so much</p>
+                    <div class="heart-burst">❤️</div>
+                    <p class="quote">"You are my today and all of my tomorrows"</p>
+                    <div class="rose-garden">
+                        <div class="rose">🌹</div>
+                        <div class="rose">🌹</div>
+                        <div class="rose">🌹</div>
+                        <div class="rose">🌹</div>
+                        <div class="rose">🌹</div>
+                    </div>
+                    
+                    <div class="message-section">
+                        <p style="font-size: 1.2em; color: #d63031; margin: 30px 0 20px 0;">Tell me something sweet... 💌</p>
+                        <input type="text" id="userMessage" class="message-input" placeholder="Type your message here..." maxlength="100">
+                        <button class="send-btn" onclick="sendMessage()">Send 💕</button>
+                        <div id="reply" class="reply-message"></div>
+                    </div>
+                    
+                    <button class="next-btn restart-btn" onclick="goToPage(1)">Start Over 🔄</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="floating-hearts"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
